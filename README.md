@@ -32,4 +32,5 @@ Steps:
 * Allow connections to specified port on the host machine using the following command:
 - $ sudo ufw allow 7886
 
-* You can now connect to this host machine and host your application inside the Apache Tomcat Server.
+* You can now connect to this host machine and host your application inside the Apache Tomcat Server using the following url,
+http://192.168.100.15:7886/
