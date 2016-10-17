@@ -1,7 +1,7 @@
 # Tomcat
 - This is a step by step guide to start a docker container for Tomcat on Ubuntu 16.04 Container.
 - Please ensure that you have the corresponding Dockerfile before following the procedure steps.
-- Tomcat will be running on port 7556 inside the docker container and the host port to access it is 7886.
+- Tomcat will be running on port 4320 inside the docker container and the host port to access it is 4132.
 - Your application data stored at /home/docker/DockerImages/Tomcat/imagedata/ inside the docker container will be persisted on the host machine.
 - You should deploy your application data /opt/tomcat/webapps/ directory and ensure that the configuration for servelets & jsp pages is correct.
 
@@ -17,7 +17,7 @@ Steps:
 * Note the image id at displayed by docker at the end of the successful build. It should be something similar to this 85f9ce11db88. 
 
 * The container can be deployed/run on the host machine using the below command:
-- $ docker run --name tomcat -d -p 7886:7556 -v /home/docker/DockerImages/Tomcat/imagedata:/imagedata 85f9ce11db88
+- $ docker run --name tomcat -d -p 4132:4320 -v /home/docker/DockerImages/Tomcat/imagedata:/imagedata 85f9ce11db88
 
 * Please note your image id may be different than 85f9ce11db88
 
@@ -30,7 +30,7 @@ Steps:
 -You should see the name of your container with the associated Container id with current status
 
 * Allow connections to specified port on the host machine using the following command:
-- $ sudo ufw allow 7886
+- $ sudo ufw allow 4132
 
 * You can now connect to this host machine and host your application inside the Apache Tomcat Server using the following url,
-http://192.168.100.15:7886/
+http://192.168.100.15:4132/
