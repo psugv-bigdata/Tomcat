@@ -17,7 +17,7 @@ Steps:
 * Note the image id at displayed by docker at the end of the successful build. It should be something similar to this 85f9ce11db88. 
 
 * The container can be deployed/run on the host machine using the below command:
-- $ docker run --name tomcat -d -p 4132:4320 -v /home/docker/DockerImages/Tomcat/imagedata:/imagedata 85f9ce11db88
+- $ docker run --name tomcat -d -p 4132:4320 -v /mnt/Tomcat:/TomcatImageData 85f9ce11db88
 
 * Please note your image id may be different than 85f9ce11db88
 
