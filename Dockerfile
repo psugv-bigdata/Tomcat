@@ -41,7 +41,7 @@ ENV PATH $PATH:$CATALINA_HOME/bin
 
 #Expose container ports
 # Connector port
-EXPOSE 7556
+EXPOSE 4320
 
 #Create directory inside container to host webapps
 VOLUME "/opt/tomcat/webapps"
@@ -50,7 +50,7 @@ VOLUME "/opt/tomcat/webapps"
 WORKDIR /opt/tomcat
 
 # Change tomcat connector port
-RUN sed -i -e 's/8080/7556/g' /opt/tomcat/conf/server.xml
+RUN sed -i -e 's/8080/4320/g' /opt/tomcat/conf/server.xml
 
 # Launch Tomcat
 CMD ["/opt/tomcat/bin/catalina.sh", "run"]
