@@ -1,0 +1,235 @@
+#cse-header,
+div.gsc-above-wrapper-area,
+div.gsc-adBlockInvisible,
+div.gcsc-branding  {
+    display:none !important;
+}
+#cse-footer {
+    position: relative !important;
+    top: -80px !important;
+    font-size: 75% !important;
+    color: #999 !important;
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+    text-align: right !important;
+}
+div.gsc-cursor-box {
+    font-size: 110% !important;
+    margin-top: 20px !important;
+    border-top: 1px solid #ddd !important;
+    padding-top: 10px !important;
+}
+#googleresults {
+    margin-bottom: 0 !important;
+}
+div.gsc-wrapper {
+    margin-top: 10px !important;
+    border-top: 1px solid #ddd !important;
+    padding-top: 20px !important;
+}
+div.gs-webResult {
+    width: 75% !important;
+}
+div#header h1 {
+    margin: 0 0 0 195px;
+}
+
+html
+{
+    background-image: url(/Files/bdybg.gif);
+    background-repeat: repeat-y;
+    background-position: 50% 0%;
+}
+#ib
+{
+    background-image: url(/Files/ibar.jpg);
+    background-repeat: repeat-y;
+    background-position: center;
+}
+#menu .m1
+{
+    background-image: url(/Files/menu.jpg);
+    background-repeat: repeat-y;
+    background-position: left;
+}
+#menu .m2
+{
+    background-image: url(/Files/semtr.png);
+}
+#menu .m1 a
+{
+    background-image: url(/Files/mgrad.gif);
+    background-repeat: repeat-x;
+    background-position: left;
+}
+/*
+input.sa
+{
+    background-image: url(/Files/go.gif);
+    background-repeat: no-repeat;
+}
+*/
+input.qb
+{
+    background-image: url(/Files/searchy.gif);
+    background-repeat: no-repeat;
+    background-position: 0% 100%;
+}
+#searchpage button.tab.rounded
+{
+    background-image: url(/Files/rndTab.gif);
+    background-repeat: no-repeat;
+    background-position: 0% 0%;
+    border: none;
+}
+#searchpage button.selectedtab.rounded
+{
+    background-image: url(/Files/rndTabsel.gif);
+    background-repeat: no-repeat;
+    background-position: 0% 0%;
+    border: none;
+}
+#content #fill
+{
+    background-image: url(/Files/bgnosidebar.gif);
+    background-repeat: repeat-y;
+    background-position: 0% 0%;
+}
+#content.narrow #fill
+{
+    background-image: url(/Files/bgsidebar.gif);
+    background-repeat: repeat-y;
+    background-position: 0% 0%;
+}
+#r2 #fill
+{
+    background-image: url(/Files/homefill.gif);
+    background-repeat: repeat-y;
+    background-position: 0% 0%;
+}
+.s1h
+{
+    background-image: url(/Files/LLBG-Top.png);
+    background-repeat: no-repeat;
+    background-position: 0% 0%;
+}
+.s1b,
+.s1i
+{
+    background-image: url(/Files/LLBG-Middle.png);
+    background-repeat: repeat-y;
+}
+.s1a
+{
+    background-image: url(/Files/LLBG-bottom.png);
+    background-repeat: no-repeat;
+    background-position: 0% 0%;
+}
+.c3 a.btn
+{
+    background-image: url(/Files/c3button.png);
+    background-repeat: no-repeat;
+}
+.hpbtn
+{
+    background-image: url(/Files/c3button.png);
+    background-repeat: no-repeat;
+}
+#lftside li.plus > span,
+#lftside li.plus > a.cathdr
+{
+    background-image: url(/Files/plus.png);
+    background-repeat: no-repeat;
+    background-position: 0px 2px;
+}
+#lftside li.minus > span,
+#lftside li.minus > a.cathdr
+{
+    background-image: url(/Files/minus.png);
+    background-repeat: no-repeat;
+    background-position: 0px 2px;
+}
+#container.admissions #header{
+    background-position: 100% 0%;
+    background-repeat: no-repeat;
+    background-image: url(/Files/swoop-top.png);
+}
+#container.acadprg #header{
+    background-position: 100% 100%;
+    background-repeat: no-repeat;
+    background-image: url(/Files/acadprg.jpg);
+}
+#container.admissions #fill,
+#container.acadprg #fill
+{
+    background-position: 100% 0%;
+    background-repeat: repeat-y;
+    background-image: url(/Files/admis-bkgd-shadow2.png);
+}
+#adms-foot
+{
+    background-position: 100% 100%;
+    background-repeat: no-repeat;
+    background-image: url(/Files/swoop-bottom-plain.png);
+}
+.adms-bullet
+{
+    background-image: url(/Files/bullet-off.png);
+}
+.adms-events-item:hover .adms-bullet,
+.nontrad-item:hover .adms-bullet
+{
+    background-image: url(/Files/bullet-on.png);
+}
+.adms-slide-btn
+{
+    background-image: url(/Files/btn_slide-on.png);
+}
+ 
+.alert 
+{
+    background-image: url(/Files/alertbg.png);
+}
+.alert .alert-box 
+{
+    background-image: url(/Files/alert.png);
+    background-position: 15px 20px;
+    background-repeat: no-repeat;
+}
+.alert .closebtn
+{
+    background-image: url(/Files/closebtn.png);
+    background-position: 100% 0%;
+    background-repeat: no-repeat;
+}
+.alert .closebtn:hover
+{
+    background-image: url(/Files/closebtn-active.png);
+}
+.alert-viewed .alert-box
+{
+    background-image: url(/Files/alert-sm.png);
+    background-position: 0% 0%;
+    background-repeat: no-repeat;
+}
+@media print
+{
+#content
+{
+    background-image: url(/Files/bgnosidebar.gif);
+    background-repeat: repeat-y;
+    background-position: 0% 0%;
+}
+#content.narrow
+{
+    background-image: url(/Files/bgsidebar.gif);
+    background-repeat: repeat-y;
+    background-position: 0% 0%;
+}
+#r2
+{
+    background-image: url(/Files/homefill.gif);
+    background-repeat: repeat-y;
+    background-position: 0% 0%;
+}
+}
