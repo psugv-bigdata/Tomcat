@@ -55,6 +55,7 @@
           <h4>Server Status<br/><br/></h4>
 
 <%@ page contentType="text/html; charset=UTF-8" language="java" pageEncoding="UTF-8" import="java.sql.* " %>
+<%@ page import="java.net.*" %>
 <%@ page import="java.io.*" %>
 <%
 try
@@ -69,6 +70,17 @@ try
 	myConnection = DriverManager.getConnection(url,username,password);
 	//Postgres is running
 	out.println("<p><img src='images/green.png' height=12> PostgreSQL</p>");
+	
+	//Check status for sonarqube
+	Socket socket = new Socket(); 
+    socket.connect(new InetSocketAddress("192.168.100.15", 4321), 5000);
+    out.println("<p><img src='images/green.png' height=12> SonarQube</p>");
+}
+
+//IOException is thrown by socket.connect()
+catch (IOException e) {
+     // Either timeout or unreachable or failed DNS lookup.
+	 out.println("<p><img src='images/red.png' height=12> SonarQube</p>");
 }
 catch(Exception ex)
 {
@@ -112,7 +124,7 @@ catch(Exception ex)
 <div class="ltgray1"></div>
 <p>Penn State Great Valley <span class="lnksep">|</span> 30 East Swedesford Road, Malvern, PA 19355 <span class="lnksep">|</span> 610-648-3200
 <br>
-© 2016 <a href="http://www.psu.edu/">The Pennsylvania State University</a> <span class="lnksep">|</span> <a href="http://www.psu.edu/ur/legal.html">Privacy and Legal Statements</a> <span class="lnksep">|</span> <a href="http://sgps.psu.edu/hotlines.htm" title="Phone numbers for emegency services, community resources and ethics hotlines">Hotlines</a></p>
+Â© 2016 <a href="http://www.psu.edu/">The Pennsylvania State University</a> <span class="lnksep">|</span> <a href="http://www.psu.edu/ur/legal.html">Privacy and Legal Statements</a> <span class="lnksep">|</span> <a href="http://sgps.psu.edu/hotlines.htm" title="Phone numbers for emegency services, community resources and ethics hotlines">Hotlines</a></p>
 </div>
 </div>
 
